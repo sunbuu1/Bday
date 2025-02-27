@@ -1,2 +1,0 @@
-# Bday
-a short project 
