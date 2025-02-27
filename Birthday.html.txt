@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffccff;
+            transition: background 1s ease-in-out;
+        }
+        .card {
+            width: 80%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            background: #ff66b2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="page1">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p>Wishing you a fantastic day filled with love and joy!</p>
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+
+    <div class="card hidden" id="page2">
+        <h1>💖 Special Message 💖</h1>
+        <p>You are an amazing person, and today is all about celebrating you! May this year bring you endless happiness, success, and love. 🎈🎊</p>
+        <p>Enjoy your day to the fullest! 🌟</p>
+    </div>
+
+    <script>
+        function nextPage() {
+            document.getElementById('page1').style.display = 'none';
+            document.getElementById('page2').style.display = 'block';
+            document.body.style.backgroundColor = '#ff99cc';
+        }
+    </script>
+</body>
+</html>
